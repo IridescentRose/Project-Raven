@@ -1,0 +1,68 @@
+{
+    "listeners" : [
+        {
+            "name" : "walkForward",
+            "button" : 5
+        },
+        {
+            "name" : "walkBackward",
+            "button" : 5
+        },
+        {
+            "name" : "walkStrafeLeft",
+            "button" : 3
+        },
+        {
+            "name" : "walkStrafeRight",
+            "button" : 3
+        },
+        {
+            "name" : "break",
+            "button" : 256
+        },
+        {
+            "name" : "place",
+            "button" : 512
+        },
+        {
+            "name" : "lookUp",
+            "button" : 4096
+        },
+        {
+            "name" : "lookDown",
+            "button" : 16384
+        },
+        {
+            "name" : "lookLeft",
+            "button" : 32768
+        },
+        {
+            "name" : "lookRight",
+            "button" : 8192
+        },
+        {
+            "name" : "pause",
+            "button" : 8
+        },
+        {
+            "name" : "jump",
+            "button" : 1
+        },
+        {
+            "name" : "scrollLeft",
+            "button" : 128 
+        },
+        {
+            "name" : "scrollRight",
+            "button" : 32
+        },
+        {
+            "name" : "sprint",
+            "button" : 16
+        },
+        {
+            "name" : "sneak",
+            "button" : 64
+        }
+    ]
+}
