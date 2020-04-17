@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{4FAD62C7-7BC9-434B-9EE2-B7C2B2342953}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>build.sh</NMakeBuildCommandLine>
+    <NMakeOutput>Project-Raven.exe</NMakeOutput>
+    <NMakeCleanCommandLine>clean.sh</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>rebuild.sh</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>-DMC_PSP;WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <NMakeBuildCommandLine>build.sh</NMakeBuildCommandLine>
+    <NMakeOutput>Project-Raven.exe</NMakeOutput>
+    <NMakeCleanCommandLine>clean.sh</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>rebuild.sh</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>-DMC_PSP;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>build.sh</NMakeBuildCommandLine>
+    <NMakeOutput>Project-Raven.exe</NMakeOutput>
+    <NMakeCleanCommandLine>clean.sh</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>rebuild.sh</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>-DMC_PSP;WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <NMakeBuildCommandLine>build.sh</NMakeBuildCommandLine>
+    <NMakeOutput>Project-Raven.exe</NMakeOutput>
+    <NMakeCleanCommandLine>clean.sh</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>rebuild.sh</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>-DMC_PSP;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Minecraft\MakefileGame" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Minecraft\Minecraft.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Audio\MusicManager.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Player.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Rendering\Clouds.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Rendering\Moon.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Rendering\Sky.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Rendering\Stars.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\Rendering\Sun.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\SPClient.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\BlockData.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Chunk.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\ChunkMesh.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Perlin.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Registry\BlockRegistry.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Registry\ItemRegistry.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\World.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\WorldProvider.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Common\Options.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Common\Translations.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\ChatScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\Controller.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\LanguageScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\Multiplayer.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\OptionsMainScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\OptionsMusicScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\OptionsSkinCustomization.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\Panorama.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\PlayGenerate.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\PlaySelect.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\ResourcePacks.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\Snooper.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\TitleScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\components\VideoScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\LoadingScreen.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Menu\MenuState.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\State\StateManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Minecraft\Minecraft\Client\Audio\MusicManager.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\Player.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Clouds.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Moon.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Sky.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Stars.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Sun.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\SPClient.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\BlockData.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Block.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Chunk.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\ChunkMesh.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Items\Item.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Perlin.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Registry\BlockRegistry.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Registry\ItemRegistry.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Registry\Registry.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\World.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\WorldProvider.h" />
+    <ClInclude Include="Minecraft\Minecraft\Common\Options.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\Common\Translations.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\Menu\components\Panorama.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\Menu\LoadingScreen.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\Menu\MenuState.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\State\GameState.h" />
+    <ClInclude Include="Minecraft\Minecraft\State\StateManager.h" />
+    <ClInclude Include="Minecraft\Minecraft\Version.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
