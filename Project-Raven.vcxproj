@@ -74,7 +74,7 @@
     <NMakeOutput>Project-Raven.exe</NMakeOutput>
     <NMakeCleanCommandLine>clean.sh</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>rebuild.sh</NMakeReBuildCommandLine>
-    <NMakePreprocessorDefinitions>-DMC_PSP;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>MC_PSP;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeBuildCommandLine>build.sh</NMakeBuildCommandLine>
@@ -106,6 +106,7 @@
     <ClCompile Include="Minecraft\Minecraft\Client\Rendering\Sun.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\SPClient.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\BlockData.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Chunk.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\ChunkMesh.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Perlin.cpp" />
@@ -144,6 +145,7 @@
     <ClInclude Include="Minecraft\Minecraft\Client\SPClient.hpp" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\BlockData.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Block.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Chunk.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\ChunkMesh.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Items\Item.h" />
