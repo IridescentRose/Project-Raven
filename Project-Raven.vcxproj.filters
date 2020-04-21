@@ -129,6 +129,12 @@
     <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\SoundType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Physics\BlockAABB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Minecraft\Minecraft\Client\Audio\MusicManager.h">
@@ -213,6 +219,30 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\BlockSoundEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\SoundType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Physics\BlockAABB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\AABB\AABB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\State\BlockState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Properties\BlockProperty.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Properties\RotationEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Growable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

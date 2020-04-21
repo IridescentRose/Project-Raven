@@ -75,6 +75,7 @@
     <NMakeCleanCommandLine>clean.sh</NMakeCleanCommandLine>
     <NMakeReBuildCommandLine>rebuild.sh</NMakeReBuildCommandLine>
     <NMakePreprocessorDefinitions>MC_PSP;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <IncludePath>C:\Users\Iride\Desktop\Project-Raven\Minecraft\libs\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <NMakeBuildCommandLine>build.sh</NMakeBuildCommandLine>
@@ -107,6 +108,8 @@
     <ClCompile Include="Minecraft\Minecraft\Client\SPClient.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\BlockData.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Physics\BlockAABB.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\SoundType.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Chunk.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\ChunkMesh.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Perlin.cpp" />
@@ -143,9 +146,17 @@
     <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Stars.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\Rendering\Sun.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\SPClient.hpp" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\AABB\AABB.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\BlockData.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Block.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Growable.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Physics\BlockAABB.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Properties\BlockProperty.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Properties\RotationEnum.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\BlockSoundEvent.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\SoundType.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\State\BlockState.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Chunk.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\ChunkMesh.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Items\Item.h" />
