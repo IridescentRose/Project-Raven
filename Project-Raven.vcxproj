@@ -112,6 +112,7 @@
     <ClCompile Include="Minecraft\Minecraft\Client\World\Blocks\Sounds\SoundType.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Chunk.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\ChunkMesh.cpp" />
+    <ClCompile Include="Minecraft\Minecraft\Client\World\Creative\CreativeTabs.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Perlin.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Registry\BlockRegistry.cpp" />
     <ClCompile Include="Minecraft\Minecraft\Client\World\Registry\ItemRegistry.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="Minecraft\Minecraft\Client\World\AABB\AABB.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\BlockData.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Block.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\BlockSubtypes.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Growable.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Materials\Material.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\Physics\BlockAABB.h" />
@@ -159,6 +161,8 @@
     <ClInclude Include="Minecraft\Minecraft\Client\World\Blocks\State\BlockState.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Chunk.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\ChunkMesh.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Creative\CreativeTabs.h" />
+    <ClInclude Include="Minecraft\Minecraft\Client\World\Items\DyeColors.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Items\Item.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Perlin.h" />
     <ClInclude Include="Minecraft\Minecraft\Client\World\Registry\BlockRegistry.h" />
