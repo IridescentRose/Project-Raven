@@ -3,7 +3,9 @@
 
 class SoundType {
 public:
+	SoundType() {
 
+	}
 	SoundType(float v, float p, BlockSoundEvent bS, BlockSoundEvent sS, BlockSoundEvent pS, BlockSoundEvent hS, BlockSoundEvent fS) {
 		volume = v;
 		pitch = p;
